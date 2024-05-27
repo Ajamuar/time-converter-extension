@@ -1,0 +1,33 @@
+{
+    "name": "time-converter-extension",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "license": "AGPL-version-3.0",
+    "private": false,
+    "engines": {
+        "node": ">= 14.0.0",
+        "npm": ">= 6.0.0"
+    },
+    "homepage": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ajamuar/time-converter-extension"
+    },
+    "bugs": "",
+    "keywords": [],
+    "author": {
+        "name": "Aditya Jamuar",
+        "email": "adityasharanjamuar@gmail.com"
+    },
+    "contributors": [],
+    "scripts": {
+        "dev": "",
+        "test": ""
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.268",
+        "typescript": "^5.4.5"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Time Converter",
+    "description": "An extension to convert time from one timezone to another",
+    "version": "2.0",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "icons/icon.png"
+    },
+    "permissions": ["tabs", "scripting", "activeTab"],
+    "background": {
+        "service_worker": "popup/background.js"
+    },
+
+    "content_scripts": [
+        {
+            "js": ["popup/content.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "commands": {
+        "convertUTC": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+U",
+                "mac": "MacCtrl+Shift+U"
+            },
+            "description": "Convert UTC to IST"
+        },
+        "convertAEST": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+A",
+                "mac": "MacCtrl+Shift+A"
+            },
+            "description": "Convert AEST to IST"
+        }
+    }
+}
